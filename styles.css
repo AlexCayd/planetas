@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+    background-image: url(stars.png);
+}
+
+.sistema {
+    min-height: 118vh;
+    background-image: url(sistemasolar.png);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+.header {
+    text-align: center;
+    font-size: 22px;
+    background-image: url(stars.png);
+    text-shadow: 0px 3px 3px #fff;
+    margin: 20px 0 50px 0;
+}
+
+.principal {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px 40px;
+}
+
+.formulario__legend {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.formulario__campos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+.formulario__label {
+    font-size: 24px;
+}
+
+.formulario__input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.formulario__select, .formulario__opcion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.formulario__submit {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 5px 15px;
+    margin-top: 25px;
+    color: #fff;
+    background-color: black;
+    background-image: url(stars.png);
+    background-position: center center;
+    transition: .4s all;
+    cursor: pointer;
+}
+
+.formulario__submit:hover {
+    transform: scale(1.02);
+}
+
+.formulario__enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.resultado {
+    max-width: 1200px;
+    width: 95%;
+    margin: 55px auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 28px;
+}

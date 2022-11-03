@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravedad en los planetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__texto">Peso de un Objeto en los Planetas del Sistema Solar</h1>
+    </header>
+
+    <main class="principal">
+        <form class="formulario">
+            <legend class="formulario__legend">¿Cuánto pesa un objeto en otro planeta?</legend>
+            <div class="formulario__campos">
+                <div class="formulario__campo">
+                    <label for="masa" class="formulario__label">Ingrese la masa (kg) del objeto:</label>
+                    <input id="masa" type="number" class="formulario__input" placeholder="Masa (kg)" min="0" required>
+                </div>
+            
+                <div class="formulario__campo">
+                    <label for="planeta" class="formulario__label">Selecciona un planeta:</label>
+                    <select name="planeta" id="planeta" class="formulario__select">
+                        <option value="" class="formulario__opcion" selected disabled required>-- Seleccionar --</option>
+                        <option value="Mercurio" class="formulario__opcion">Mercurio</option>
+                        <option value="Venus" class="formulario__opcion">Venus</option>
+                        <option value="Tierra" class="formulario__opcion">Tierra</option>
+                        <option value="Marte" class="formulario__opcion">Marte</option>
+                        <option value="Jupiter" class="formulario__opcion">Jupiter</option>
+                        <option value="Saturno" class="formulario__opcion">Saturno</option>
+                        <option value="Urano" class="formulario__opcion">Urano</option>
+                        <option value="Neptuno" class="formulario__opcion">Neptuno</option>
+                        <option value="Plutón" class="formulario__opcion">Plutón</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formulario__enviar">
+                <input type="submit" class="formulario__submit" value="Calcular">
+            </div>
+        </form>
+    </main>
+
+    <div class="resultado">
+        <h2 class="resultado__texto">Resultado</h2>
+        <div id="resultado"></div>
+    </div>
+
+    <div class="sistema"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
